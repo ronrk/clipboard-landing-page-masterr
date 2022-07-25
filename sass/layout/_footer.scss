@@ -1,0 +1,75 @@
+.footer {
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba($color-neutral-gray, 0.05);
+  padding: 1rem 10rem;
+  align-items: center;
+  margin-top: 5rem;
+  @media only screen and (max-width: 37.5em) {
+    flex-direction: column;
+    height: auto;
+    // justify-content: spa;
+    width: 100%;
+  }
+  &__logo {
+    align-self: center;
+    width: 5rem;
+    margin-right: 15rem;
+    @media only screen and (max-width: 37.5em) {
+      margin: 0;
+    }
+  }
+  &__nav {
+    list-style: none;
+    height: 100%;
+    flex: 0 0 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    @media only screen and (max-width: 37.5em) {
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+    & li {
+      height: 5rem;
+      width: 30%;
+      @media only screen and (max-width: 37.5em) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    &__link {
+      &:link,
+      &:visited {
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: $color-neutral-gray;
+        transition: all 0.1s;
+      }
+      &:hover {
+        color: $color-primary-cyan;
+      }
+    }
+  }
+
+  &__socials {
+    margin-left: 5rem;
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    @media only screen and (max-width: 37.5em) {
+      width: 100%;
+      margin: 0;
+      margin-top: 4rem;
+    }
+    & img {
+      width: 2.4rem;
+      cursor: pointer;
+      &:hover {
+        filter: opacity(0.5) drop-shadow(0 0.5rem 1rem $color-primary-cyan);
+      }
+    }
+  }
+}

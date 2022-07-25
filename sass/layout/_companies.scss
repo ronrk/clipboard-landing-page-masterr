@@ -1,0 +1,11 @@
+.companies {
+  width: 100%;
+  text-align: center;
+  &__icon {
+    width: 10%;
+    margin: 3rem 5rem;
+    @media only screen and (max-width: 37.5em) {
+      width: 30%;
+    }
+  }
+}

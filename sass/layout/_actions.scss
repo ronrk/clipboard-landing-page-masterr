@@ -1,0 +1,21 @@
+.actions {
+  width: 100%;
+  text-align: center;
+  margin: 8rem 0;
+  @media only screen and (max-width: 37.5em) {
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+    font-size: 1.7rem;
+    margin-bottom: 5rem;
+    padding: 2rem 5rem;
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color: $color-neutral-gray;
+    line-height: 1.9;
+    opacity: 0.6;
+  }
+}
